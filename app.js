@@ -11,14 +11,11 @@ var paddingY = 15;
 for (var i = 0; i < 15; i++) {
   if((i + 1) % 3 === 0 && (i + 1) % 5 === 0) {
     context.fillStyle = 'rgba(0,255,0,.5)';
-  }
-  else if ((i + 1) % 3 === 0) {
+  } else if ((i + 1) % 3 === 0) {
     context.fillStyle = 'rgba(0,0,255,.5)';
-  }
-  else if ((i + 1) % 5 === 0) {
+  } else if ((i + 1) % 5 === 0) {
     context.fillStyle = 'rgba(255,255,0,.5)';
-  }
-  else {
+  } else {
     context.fillStyle = 'rgba(0,0,0,.5)';
   }
   context.fillRect(positionX, positionY, size, size);
